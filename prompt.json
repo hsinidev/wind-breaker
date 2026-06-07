@@ -1,0 +1,129 @@
+{
+  "core_prompt": {
+    "role": "Manga-Architect",
+    "description": "An expert AI prompt engineer specializing in designing prompt sequences for Google's Antigravity EDI to construct professional, visually stunning, and user-friendly websites for manga series, with a focus on modern Progressive Web App (PWA) technologies.",
+    "objective": "Interact with a user to gather essential details about their manga series and then generate a structured, multi-part prompt set. This prompt set will be used by a downstream web development AI to build a complete, professional, and feature-rich manga website from the ground up, fully realized as an installable PWA.",
+    "context_gathering": [
+      "WIND BREAKER",
+      "Satoru Nii",
+      "Action, School, Shonen, Delinquent",
+      "Haruka Sakura enters Furin High to reach the top, only to find the delinquents there are the town's 'Bofurin' protectors.",
+      "Shonen / Action Manga Readers / Global Gen Z",
+      "Protection, Teamwork, Urban Justice, Redemption, Community Strength",
+      "Sharp, detailed urban aesthetic with high-contrast action sequences and street-fashion influence",
+      "Asphalt Black (#121212), Neon Cyan (#00f2ff), Warning Yellow (#facc15)",
+      "Furin High Emblem, Haruka Sakura Heterochromia Portrait, Bofurin Jacket Sticker-Slap, Street Graffiti Backgrounds"
+    ],
+    "prompts": [
+      {
+        "id": "PROMPT_01_GLOBAL_STYLE_GUIDE",
+        "objective": "Define the website's universal design language and technical foundation.",
+        "task": "Generate the CSS and design token configuration for a professional manga website.",
+        "instructions": {
+          "Design Philosophy": "Modern, clean, and immersive. The design should complement the manga's art, not compete with it. Prioritize readability and a seamless user experience.",
+          "Typography": "Headings: Use a bold, impactful font that reflects the [Genre(s)]. Body Text: Use a highly readable sans-serif font like Inter or Lato.",
+          "Color Palette": "Primary: [Primary Color Palette]. Background: Dark theme preferred (#1a1a1d). Text: Off-white (#F5F5F5).",
+          "UI Elements": "Flat design with subtle hover effects. Use Tailwind CSS for a utility-first, mobile-first responsive layout."
+        }
+      },
+      {
+        "id": "PROMPT_02_HOMEPAGE",
+        "objective": "Create a visually striking landing page that hooks new readers and encourages app installation.",
+        "task": "Design the homepage for the manga titled [Manga Title].",
+        "instructions": {
+          "Header (Sticky)": "Left: [Logo], Center: Navigation (Home, Chapters, Characters, Settings), Right: 'Start Reading' and 'Install App' buttons. Hide on scroll down, reappear on scroll up.",
+          "Hero Section": "Full-width [Main cover art] with parallax and dark gradient. Include Title, Tagline, Synopsis, and dual 'Start from Ch. 1' and 'Latest Chapter' CTAs.",
+          "Latest Release Section": "Horizontal scrolling container or Grid of the most recent chapters with lazy-loaded thumbnails.",
+          "Character Introduction Section": "Grid of main characters using [Character Portraits] with 3D hover effects.",
+          "Footer": "Links for About Us, Contact, Privacy Policy, DMCA, Terms, Cookies, and Disclaimer. Author credits and Copyright."
+        }
+      },
+      {
+        "id": "PROMPT_03_CHAPTER_LIST_PAGE",
+        "objective": "Provide a clear, easy-to-navigate list of all chapters with offline capabilities.",
+        "task": "Design the 'Chapters' page.",
+        "instructions": {
+          "Layout": "Single-column or Grid-based list of chapter cards filling full width.",
+          "Cards": "Include Chapter Number, Title, Date, Thumbnail. Visually distinguish read/unread chapters.",
+          "Interactions": "Subtle 3D lift and soft accent glow on hover.",
+          "Features": "Searchable CHAPTER_INDEX dropdown with arc-filtering. Sort by 'Newest/Oldest First'. Save and restore scroll position."
+        }
+      },
+      {
+        "id": "PROMPT_04_MANGA_READER_INTERFACE",
+        "objective": "Create a modern, immersive, and high-performance 'gapless' vertical scrolling reading experience.",
+        "task": "Design the manga reader UI (webtoon/long-strip style).",
+        "instructions": {
+          "Layout": "Continuous vertical flow with pure black background (#000000). Images must be full-screen (object-fit: contain) on mobile.",
+          "Performance": "Implement image chunking, pre-loading, and lazy loading. Ensure zero white lines between image slices.",
+          "Controls (Overlay)": "Semi-transparent overlay on tap. Include progress bar, searchable chapter dropdown, and navigation (Prev/Next)."
+        }
+      },
+      {
+        "id": "PROMPT_05_CHARACTER_PROFILES_PAGE",
+        "objective": "Build a database of characters for fans to explore.",
+        "task": "Design the 'Characters' page.",
+        "instructions": {
+          "Layout": "Responsive grid of character portraits linking to a detailed profile view.",
+          "Profile View": "Left column (30%) high-res portrait. Right column (70%) Name, Aliases, expandable Biography, Key Relationships, First Appearance."
+        }
+      },
+      {
+        "id": "PROMPT_06_SEO_AND_METADATA",
+        "objective": "Optimize the website for search engines and AI generative crawlers.",
+        "task": "Generate SEO metadata and structured data.",
+        "instructions": {
+          "AI-Snippet": "Generate 150-word executive summaries for every chapter in a blockquote for GEO extraction.",
+          "Content": "Use gpt-oss:120b via Ollama API with 16-key rotation to generate 1500-word tactical reports for each page.",
+          "Schema": "Implement ComicSeries JSON-LD, Book schema, and BreadcrumbList. Generate dynamic sitemap.xml."
+        }
+      },
+      {
+        "id": "PROMPT_07_ACCESSIBILITY_AND_PERFORMANCE",
+        "objective": "Ensure the website is accessible to all users and loads quickly.",
+        "task": "Implement a11y features and performance optimizations.",
+        "instructions": {
+          "Accessibility": "Descriptive alt text, ARIA roles, high color contrast, and full keyboard navigability.",
+          "Performance": "Optimize images to AVIF format. Minify CSS/JS and implement Intersection Observer for panel loading."
+        }
+      },
+      {
+        "id": "PROMPT_08_PWA_MANIFEST_AND_INSTALLATION",
+        "objective": "Configure the Web App Manifest for a native 'add to home screen' experience.",
+        "task": "Generate manifest.json.",
+        "instructions": {
+          "Properties": "name: [Manga Title], short_name: [Manga Title], start_url: '/', display: 'standalone', theme_color: [Primary Color].",
+          "Icons": "Array of icons (192x192, 512x512 maskable).",
+          "Link": "Inject <link rel='manifest' href='/manifest.json'> into HTML <head>."
+        }
+      },
+      {
+        "id": "PROMPT_09_SERVICE_WORKER_AND_CACHING",
+        "objective": "Implement the core service worker for offline functionality.",
+        "task": "Create and register service-worker.js.",
+        "instructions": {
+          "Registration": "Register safely after page load.",
+          "Caching": "Implement 'Cache First' strategy for app shell and 'Stale-While-Revalidate' for chapter images. Enable offline reading for cached chapters."
+        }
+      },
+      {
+        "id": "PROMPT_10_BACKGROUND_SYNC_AND_NOTIFICATIONS",
+        "objective": "Implement features to proactively engage users with new content.",
+        "task": "Configure Push API and Background Sync.",
+        "instructions": {
+          "Push Notifications": "Request permission via System Notification UI. Notify users when new chapters are available.",
+          "Background Sync": "Listen for periodicsync to check for new releases and pre-cache them automatically."
+        }
+      },
+      {
+        "id": "PROMPT_11_USER_SETTINGS_AND_STORAGE_MANAGEMENT",
+        "objective": "Create a settings page for user control over experience and offline data.",
+        "task": "Design and implement the 'Settings' page.",
+        "instructions": {
+          "Customization": "Toggles for Theme (Light/Dark/System), Reading Mode (Vertical/Single), and Notification preferences.",
+          "Storage": "Display used quota using navigator.storage. Provide 'Clear Cache' options to free up local space."
+        }
+      }
+    ]
+  }
+}

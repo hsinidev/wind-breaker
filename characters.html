@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personnel Dossiers | WIND BREAKER</title>
+  <link rel="stylesheet" href="/src/style.css">
+  <style>
+    .character-card {
+      perspective: 1000px;
+    }
+    .card-inner {
+      transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      transform-style: preserve-3d;
+    }
+    .character-card:hover .card-inner {
+      transform: rotateY(10deg) rotateX(5deg);
+    }
+  </style>
+  
+  <link rel="canonical" href="https://wdbreaker.com/characters.html">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J6WCD43K95"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-J6WCD43K95');
+  </script>
+</head>
+<body class="bg-asphalt text-off-white">
+  <nav class="fixed top-0 w-full z-50 glass-panel py-4 px-6 md:px-12 flex justify-between items-center">
+    <a href="/" class="text-2xl font-black italic tracking-tighter neon-glow">WIND <span class="text-warning-yellow">BREAKER</span></a>
+    <a href="/" class="hover:text-neon-cyan font-bold uppercase text-xs">Home</a>
+  </nav>
+
+  <main class="pt-32 pb-24 container mx-auto px-6">
+    <header class="mb-16 text-center">
+      <h1 class="text-6xl md:text-8xl font-black italic uppercase italic leading-none mb-4">BOFURIN <br> <span class="text-neon-cyan">PERSONNEL</span></h1>
+      <p class="text-off-white/40 uppercase tracking-[0.4em] text-xs font-bold">Classified Fighting Force Data</p>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <!-- Character Card: Sakura -->
+      <div class="character-card group">
+        <div class="card-inner glass-panel p-8 relative overflow-hidden border-l-8 border-l-neon-cyan">
+          <div class="flex gap-8 items-start">
+            <div class="w-1/3 aspect-square bg-asphalt border border-white/10 overflow-hidden">
+               <img src="/hero.png" class="w-full h-full object-cover">
+            </div>
+            <div class="w-2/3">
+              <h2 class="text-3xl font-black mb-1 italic">HARUKA SAKURA</h2>
+              <p class="text-neon-cyan font-black text-xs tracking-widest mb-4">TITLE: THE LONELY ROOKIE</p>
+              <div class="h-px w-full bg-white/10 mb-4"></div>
+              <p class="text-sm text-off-white/60 leading-relaxed">
+                Known for his distinct hair and eyes, Sakura entered Furin High to reach the top. He soon realizes that Bofurin isn't about personal glory, but protecting the town.
+              </p>
+            </div>
+          </div>
+          <div class="mt-8 grid grid-cols-2 gap-4 text-[10px] font-bold uppercase tracking-widest text-off-white/40">
+            <div>SPECIALTY: AGILITY & INSTINCT</div>
+            <div>STATUS: ACTIVE PROTECTION</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Character Card: Umemiya -->
+      <div class="character-card group">
+        <div class="card-inner glass-panel p-8 relative overflow-hidden border-l-8 border-l-warning-yellow">
+          <div class="flex gap-8 items-start">
+            <div class="w-1/3 aspect-square bg-asphalt border border-white/10 overflow-hidden">
+                <div class="w-full h-full flex items-center justify-center font-black text-4xl text-white/5 italic">UH</div>
+            </div>
+            <div class="w-2/3">
+              <h2 class="text-3xl font-black mb-1 italic">UMEMIYA HAJIME</h2>
+              <p class="text-warning-yellow font-black text-xs tracking-widest mb-4">TITLE: BOFURIN LEADER</p>
+              <div class="h-px w-full bg-white/10 mb-4"></div>
+              <p class="text-sm text-off-white/60 leading-relaxed">
+                The charismatic leader of Furin High. He turned the delinquents into the town's shield. He is surprisingly humble and nature-loving, but terrifying in a fight.
+              </p>
+            </div>
+          </div>
+          <div class="mt-8 grid grid-cols-2 gap-4 text-[10px] font-bold uppercase tracking-widest text-off-white/40">
+            <div>SPECIALTY: ABSOLUTE STRENGTH</div>
+            <div>STATUS: SUPREME COMMAND</div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Character Card: Suo -->
+       <div class="character-card group">
+        <div class="card-inner glass-panel p-8 relative overflow-hidden border-l-8 border-l-white/20">
+          <div class="flex gap-8 items-start">
+            <div class="w-1/3 aspect-square bg-asphalt border border-white/10 overflow-hidden">
+               <div class="w-full h-full flex items-center justify-center font-black text-4xl text-white/5 italic">HS</div>
+            </div>
+            <div class="w-2/3">
+              <h2 class="text-3xl font-black mb-1 italic">HAYATO SUO</h2>
+              <p class="text-off-white/80 font-black text-xs tracking-widest mb-4">TITLE: THE ELEGANT BLADE</p>
+              <div class="h-px w-full bg-white/10 mb-4"></div>
+              <p class="text-sm text-off-white/60 leading-relaxed">
+                A calm, collected fighter who remains polite even during combat. His fighting style is fluid and precise, making him one of the most dangerous members of Bofurin.
+              </p>
+            </div>
+          </div>
+          <div class="mt-8 grid grid-cols-2 gap-4 text-[10px] font-bold uppercase tracking-widest text-off-white/40">
+            <div>SPECIALTY: MARTIAL ARTISTRY</div>
+            <div>STATUS: ACTIVE INTELLIGENCE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-12 border-t border-white/5 text-center">
+    <p class="text-[10px] uppercase font-black tracking-[0.3em] text-white/20">Wind Breaker Data Sync v1.0</p>
+  </footer>
+</body>
+</html>

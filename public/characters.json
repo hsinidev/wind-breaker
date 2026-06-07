@@ -1,0 +1,107 @@
+[
+  {
+    "id": "haruka-sakura",
+    "name": "Haruka Sakura",
+    "role": "Bofurin First-Year",
+    "image": "/haruka_sakura_hero_1776355686103.png",
+    "bio": "The protagonist of Wind Breaker. Driven by a desire to reach the top, Sakura joins Furin High only to find it protected by the benevolent delinquents of Bofurin. His heterochromia and black-and-white hair reflect his complex nature. He is a high-level street fighter with incredible reflexes and an iron will."
+  },
+  {
+    "id": "hajime-umemiya",
+    "name": "Hajime Umemiya",
+    "role": "Bofurin Leader (Eij\u016b)",
+    "image": "/hajime_umemiya_bofurin_leader_1776359072127.png",
+    "bio": "The top of Bofurin and Makochi's most respected figure. A kind-hearted leader who spends his time gardening and caring for the community. In combat, he possesses overwhelming strength and a charismatic presence that unites the diverse members of the gang."
+  },
+  {
+    "id": "hayato-suo",
+    "name": "Hayato Suo",
+    "role": "Bofurin Captain",
+    "image": "/hayato_suo_eye_patch_1776359090263.png",
+    "bio": "An elegant and polite combatant who hides a fierce fighting spirit. Suo utilizes Chinese martial arts techniques, focusing on leverage and precise movements. His eyepatch and calm demeanor under pressure make him one of the most mysterious and capable members of Bofurin."
+  },
+  {
+    "id": "kyotaro-sugishita",
+    "name": "Kyotaro Sugishita",
+    "role": "Bofurin Powerhouse",
+    "image": "/kyotaro_sugishita_powerhouse_1776359109940.png",
+    "bio": "A silent but deadly force with raw physical power. Sugishita is fanatically loyal to Umemiya and serves as the group's primary hammer. His stamina and ability to absorb damage while delivering heavy strikes make him an essential asset in any large-scale brawl."
+  },
+  {
+    "id": "akihiko-nirei",
+    "name": "Akihiko Nirei",
+    "role": "Tactical Intel",
+    "image": "/akihiko_nirei_intel_1776359124964.png",
+    "bio": "The data specialist of the first-year class. Nirei tracks strength levels, gang affiliations, and tactical vulnerabilities of every fighter in the city. Though he lacks physical combat skills, his analytical mind provides the strategic edge needed for Bofurin to survive."
+  },
+  {
+    "id": "toma-hiragi",
+    "name": "Toma Hiragi",
+    "role": "Bofurin Captain",
+    "image": "/toma_hiragi_captain_1776359142956.png",
+    "bio": "A battle-hardened captain who specializes in defensive warfare. Hiragi is known for his incredible endurance and the ability to find openings in an opponent's guard. He often hides his stress through eating but is a reliable pillar of strength for his squad."
+  },
+  {
+    "id": "kotoha-tachibana",
+    "name": "Kotoha Tachibana",
+    "role": "Community Support",
+    "image": "/kotoha_tachibana_sister_1776359159198.png",
+    "bio": "The heart of the Bofurin community and owner of Cafe Parnassus. Kotoha provides emotional guidance and a safe haven for the town's defenders. Her intelligence and deep understanding of the people make her indispensable to the peace of Makochi."
+  },
+  {
+    "id": "shizuma-kaji",
+    "name": "Shizuma Kaji",
+    "role": "Bofurin Captain",
+    "image": "/shizuma_kaji_captain_1776359176360.png",
+    "bio": "A playful but dangerous captain who uses his diminutive stature and candy-fueled energy to confuse opponents. Kaji's fighting style is built on explosive speed and unpredictable movements, making him a nightmare for slower, more traditional fighters."
+  },
+  {
+    "id": "tasuku-tsubakino",
+    "name": "Tasuku Tsubakino",
+    "role": "Bofurin Captain",
+    "image": "/tasuku_tsubakino_captain_1776359190013.png",
+    "bio": "A graceful warrior who fights with the agility and poise of a dancer. Tsubakino's style is focused on misdirection and high-speed maneuvers. Their commitment to aesthetics and precision represents the more refined side of Bofurin's tactical approach."
+  },
+  {
+    "id": "choji-tomiyama",
+    "name": "Choji Tomiyama",
+    "role": "Shishitoren Leader",
+    "image": "/choji_tomiyama_shishitoren_1776359207178.png",
+    "bio": "The wild and energetic leader of the rival gang, Shishitoren. Tomiyama possesses cat-like reflexes and amazing aerial combat abilities. He believes only in strength and seeks to prove his gang's superiority above all others."
+  },
+  {
+    "id": "jo_togame",
+    "name": "Jo Togame",
+    "role": "Shishitoren Tactician",
+    "image": "/jo_togame_shishitoren_1776359225918.png",
+    "bio": "The calm and calculated vice-leader of Shishitoren. Togame uses a combination of grappling and redirection to neutralize stronger opponents. His tactical prowess is the primary reason for Shishitoren's rise as a rival to Bofurin."
+  },
+  {
+    "id": "taiga-tsugeura",
+    "name": "Taiga Tsugeura",
+    "role": "Bofurin Vanguard",
+    "image": "/taiga_tsugeura_muscle_1776359245163.png",
+    "bio": "A dedicated martial artist who lives for the thrill of the cage. Tsugeura's training regimen is legendary, resulting in massive strength and an unbreakable fighting spirit. He lead's Bofurin's vanguard with pure physical force."
+  },
+  {
+    "id": "mitsuki-kiryu",
+    "name": "Mitsuki Kiryu",
+    "role": "Special Response",
+    "image": "/mitsuki_kiryu_gamer_1776359259635.png",
+    "bio": "A combatant who applies the logic of professional gaming to street fighting. Kiryu analyzes frame data, timing, and 'hitboxes' of his opponents to achieve maximum efficiency. His cool and detached attitude hides a brilliant tactical mind."
+  },
+  {
+    "id": "kota-sazare",
+    "name": "Kota Sazare",
+    "role": "Bofurin Captain",
+    "image": "/kota_sazare_captain_1776359277618.png",
+    "bio": "A disciplined and serious captain who demands perfection from himself and his subordinates. Sazare's combat style is fundamental and efficient, focusing on neutralizing threats with the least amount of wasted energy."
+  },
+  {
+    "id": "megumi-momose",
+    "name": "Megumi Momose",
+    "role": "Bofurin Member",
+    "image": "/megumi_momose_member_1776359294525.png",
+    "bio": "A reliable member of the Bofurin family who excels in supporting roles during large conflicts. Momose's energy and positive attitude keep morale high even in the most dire missions. He is a master of coordinated team attacks."
+  }
+]

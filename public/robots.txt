@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /settings
+Sitemap: https://wdbreaker.com/sitemap.xml

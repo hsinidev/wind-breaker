@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Missions Archive | WIND BREAKER</title>
+  <link rel="stylesheet" href="/src/style.css">
+  
+  <link rel="canonical" href="https://wdbreaker.com/chapters.html">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J6WCD43K95"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-J6WCD43K95');
+  </script>
+</head>
+<body class="bg-dark-bg text-off-white selection:bg-neon-cyan selection:text-asphalt">
+  <nav class="fixed top-0 w-full z-50 glass-panel py-4 px-6 md:px-12 flex justify-between items-center transition-transform duration-300" id="main-nav">
+    <div class="flex items-center gap-2">
+      <a href="/" class="w-8 h-8 bg-neon-cyan rotate-45 flex items-center justify-center overflow-hidden">
+        <span class="text-asphalt font-black -rotate-45 text-xs">WB</span>
+      </a>
+      <a href="/" class="text-2xl font-black italic tracking-tighter neon-glow">WIND <span class="text-warning-yellow">BREAKER</span></a>
+    </div>
+    <div class="flex gap-4">
+      <a href="/" class="hover:text-neon-cyan font-bold uppercase text-[10px] tracking-widest border border-white/10 px-4 py-2 hover:border-neon-cyan transition-all">Front Line</a>
+    </div>
+  </nav>
+
+  <main class="pt-32 pb-24 container mx-auto px-6 max-w-7xl">
+    <header class="mb-12 border-b border-warning-yellow/10 pb-8 flex flex-col md:row justify-between items-start md:items-end gap-8">
+      <div>
+        <h1 class="text-5xl md:text-8xl font-black italic uppercase italic leading-none mb-4">MISSION <span class="text-warning-yellow">ARCHIVE</span></h1>
+        <p class="text-off-white/30 font-bold uppercase text-[10px] tracking-[0.3em]">Historical Field Reports Protocol v4.0.5</p>
+      </div>
+      
+      <div class="w-full md:w-auto flex flex-col sm:flex-row gap-4">
+        <div class="relative group">
+          <input type="text" id="chapter-search" placeholder="FILTER INTEL..." class="bg-asphalt border border-white/5 px-4 py-3 focus:border-neon-cyan outline-none font-bold uppercase text-xs w-full sm:w-64 transition-all">
+          <div class="absolute right-4 top-1/2 -translate-y-1/2 text-off-white/20 group-focus-within:text-neon-cyan">
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </div>
+        </div>
+        
+        <select id="arc-filter" class="bg-asphalt border border-white/5 px-4 py-3 font-bold uppercase text-[10px] tracking-widest outline-none cursor-pointer focus:border-neon-cyan transition-all">
+          <option value="all">ALL ARCS</option>
+          <option value="vol-01">VOL 01: BEGINNINGS</option>
+          <option value="vol-02">VOL 02: PROTECTION</option>
+        </select>
+
+        <select id="chapter-sort" class="bg-asphalt border border-white/5 px-4 py-3 font-bold uppercase text-[10px] tracking-widest outline-none cursor-pointer focus:border-neon-cyan transition-all">
+          <option value="newest">NEWEST FIRST</option>
+          <option value="oldest">OLDEST FIRST</option>
+        </select>
+      </div>
+    </header>
+
+    <div id="chapter-grid" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-8">
+      <!-- Dynamically populated -->
+      <div class="animate-pulse col-span-full py-20 text-center">
+        <span class="text-neon-cyan font-black italic tracking-widest uppercase">Deciphering Archive...</span>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="/src/chapters.js"></script>
+</body>
+</html>
